@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca do artefato perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Enquanto pesquisava na biblioteca da escola, encontrei um diário antigo. Dentro dele, estava a descrição de um artefato perdido, escondido nas profundezas do Brasil. A única pista era que o artefato estava enterrado em algum lugar entre o Pantanal e a Serra do Roncador. Decidi que iria encontrá-lo!</p>
+            <button class="btn-proximo" data-proximo="1">Pantanal</button>
+            <button class="btn-proximo" data-proximo="2">Serra do Roncador</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>No Pantanal, você começa sua jornada atravessando os vastos campos alagados. O diário menciona que o artefato pode estar escondido em um antigo templo no meio do pântano.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar o templo nas proximidades</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e tentar a Serra do Roncador</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na Serra do Roncador, você visita uma vila misteriosa. De acordo com o diário, o artefato está enterrado em um local onde antigos índios esconderam seus tesouros. Você precisa decidir onde começar a busca.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as cavernas ao pé da montanha</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as ruínas de um antigo templo indígena</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Após percorrer o Pantanal, você encontra um templo antigo, coberto por musgo e envolto por uma densa neblina. Dentro do templo, uma inscrição fala sobre um rio escondido onde o artefato foi submerso.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o rio escondido</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você decide que a busca é muito perigosa e volta para casa, mas a dúvida sobre o artefato perdido nunca deixa sua mente em paz.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Nas cavernas, você encontra algumas pinturas rupestres antigas que parecem indicar a localização de um rio que atravessa a serra. O diário fala sobre um local chamado "Cachoeira do Tesouro".</p>
+            <button class="btn-proximo" data-proximo="7">Seguir até a Cachoeira do Tesouro</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando as ruínas, você encontra um mapa que indica que a próxima pista está na região do Pantanal.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para o Pantanal</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você chega a uma pequena aldeia nas margens do rio, onde encontra um ancião que lhe conta sobre a Cachoeira do Tesouro, localizada a apenas alguns quilômetros dali. Ele avisa que a área é protegida por espíritos antigos.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir para a Cachoeira do Tesouro</button>
+            <button class="btn-proximo" data-proximo="10">Retornar para a vila e descansar</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao Pantanal, você começa a procurar o rio mencionado, mas logo se depara com uma armadilha natural. Um redemoinho perigoso quase te puxa para o fundo.</p>
+            <button class="btn-proximo" data-proximo="11">Escapar do redemoinho e continuar a busca</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>A Cachoeira do Tesouro é uma maravilha escondida. Ao investigar a área, você encontra uma entrada secreta na base da cachoeira, onde um baú antigo está enterrado. O artefato perdido está finalmente diante de seus olhos!</p>
+            <button class="btn-proximo" data-proximo="12">Abrir o baú</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você decide descansar, mas logo percebe que a Cachoeira do Tesouro pode estar mais próxima do que imaginava. Na manhã seguinte, você parte em busca do artefato.</p>
+            <button class="btn-proximo" data-proximo="9">Voltar para a Cachoeira do Tesouro</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Depois de escapar do redemoinho, você segue até uma clareira onde uma pedra gigante marca o ponto exato. Ao escavar o local, você encontra uma entrada secreta para um antigo templo submerso, onde o artefato está guardado.</p>
+            <button class="btn-proximo" data-proximo="12">Explorar o templo submerso</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/cenario-passo12-artefato.png" alt="encontrando o artefato perdido">
+            <p>Dentro do templo, você encontra o artefato perdido, um amuleto com poderes misteriosos. Agora, com o artefato em mãos, você decide estudar seus poderes e protegê-lo de quem poderia usá-lo para o mal.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
